@@ -6,10 +6,7 @@ use super::nodes::{
     compare_passenger_capacity_exp, compare_passenger_capacity_go, create_confusion_matrix,
 };
 
-pub fn reporting_pipeline<'a>(
-    cat: &'a Catalog,
-    _params: &'a (),
-) -> impl RunnableStep<PondError> + 'a {
+pub fn reporting_pipeline<'a>(cat: &'a Catalog) -> impl RunnableStep<PondError> + 'a {
     Pipeline {
         name: "reporting",
         input: (&cat.preprocessed_shuttles, &cat.companies),

@@ -16,9 +16,9 @@ use pipelines::reporting::pipeline::reporting_pipeline;
 
 fn pipeline<'a>(cat: &'a Catalog, params: &'a Params) -> impl Steps<PondError> + 'a {
     (
-        data_processing_pipeline(cat, &()),
+        data_processing_pipeline(cat),
         data_science_pipeline(cat, params),
-        reporting_pipeline(cat, &()),
+        reporting_pipeline(cat),
     )
 }
 

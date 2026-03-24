@@ -4,10 +4,7 @@ use crate::catalog::Catalog;
 
 use super::nodes::{create_model_input_table, preprocess_companies, preprocess_shuttles};
 
-pub fn data_processing_pipeline<'a>(
-    cat: &'a Catalog,
-    _params: &'a (),
-) -> impl RunnableStep<PondError> + 'a {
+pub fn data_processing_pipeline<'a>(cat: &'a Catalog) -> impl RunnableStep<PondError> + 'a {
     Pipeline {
         name: "data_processing",
         input: (&cat.companies, &cat.shuttles, &cat.reviews),
