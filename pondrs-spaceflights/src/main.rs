@@ -10,8 +10,6 @@ mod pipelines;
 use catalog::Catalog;
 use params::Params;
 
-// #[derive(Serialize, Deserialize)]
-// pub struct Params;
 use pipelines::data_processing::pipeline::data_processing_pipeline;
 use pipelines::data_science::pipeline::data_science_pipeline;
 use pipelines::reporting::pipeline::reporting_pipeline;
@@ -30,6 +28,5 @@ fn main() -> Result<(), PondError> {
             LoggingHook::new(),
             VizHook::new("http://localhost:8080".to_string()),
         ))
-        .with_args(std::env::args_os())?
         .dispatch(pipeline)
 }
