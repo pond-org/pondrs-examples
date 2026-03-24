@@ -1,0 +1,15 @@
+[package]
+name = "pondrs-spaceflights"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+linfa = "0.8"
+linfa-linear = "0.8"
+log = "0.4"
+ndarray = "0.16"
+plotly = "0.14"
+polars = { version = "0.53.0", features = ["strings", "lazy"] }
+pondrs = "0.2.0"
+serde = "1.0.228"
+serde_json = "1"
