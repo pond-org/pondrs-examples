@@ -1,4 +1,4 @@
-# pondrs-examples
+# 🤔 pondrs-examples
 
 [![CI](https://github.com/pond-org/pondrs-examples/actions/workflows/ci.yml/badge.svg)](https://github.com/pond-org/pondrs-examples/actions/workflows/ci.yml)
 
