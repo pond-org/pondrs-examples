@@ -2753,9 +2753,9 @@ dependencies = [
 
 [[package]]
 name = "pondrs"
-version = "0.2.3"
+version = "0.2.5"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "70e3e258ebc270f66cc907fe85abe4ec10d82c0b9cbc65c0062095e16801cb7e"
+checksum = "cdcd909bffb2d5f1edd2ae3630325d4adb58c6bc89edf22962d47cd38e1ac525"
 dependencies = [
  "axum",
  "base64",
